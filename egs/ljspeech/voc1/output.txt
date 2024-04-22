@@ -1,0 +1,3 @@
+Stage 2: Network training
+ls: cannot access 'exp/tr_no_dev_ljspeech_24k_hifigan_hubert_large_km500_LJ_24khz_hopsize_480/*.pkl': No such file or directory
+Training start. See the progress via exp/tr_no_dev_ljspeech_24k_hifigan_hubert_large_km500_LJ_24khz_hopsize_480/train.log.
