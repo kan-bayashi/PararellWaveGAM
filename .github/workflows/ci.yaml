@@ -96,7 +96,7 @@ jobs:
       - name: Integration
         run: |
           cd egs/yesno/voc1 && ./run.sh --conf conf/${{ matrix.config }}
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: artifacts-${{ matrix.config }}
@@ -132,7 +132,7 @@ jobs:
       - name: Integration
         run: |
           cd egs/yesno/voc1 && ./run.sh --use_fake_segments true
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: artifacts-${{ matrix.config }}
@@ -173,7 +173,7 @@ jobs:
       - name: Integration
         run: |
           cd egs/yesno/vq1 && ./run.sh --conf conf/${{ matrix.config }}
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v4
         if: failure()
         with:
           name: artifacts-${{ matrix.config }}
